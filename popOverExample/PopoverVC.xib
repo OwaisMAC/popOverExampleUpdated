@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopoverVC" customModule="popOverExample" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="XFo-LV-WPz" id="Sij-L9-xHN"/>
+                <outlet property="titleLabel" destination="O5O-so-rHs" id="udi-HL-pU9"/>
+                <outlet property="view" destination="iN0-l3-epB" id="6SB-aU-drK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="373"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Find my identification number" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O5O-so-rHs">
+                    <rect key="frame" x="20" y="9" width="354" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="UaP-46-0f9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sshot" translatesAutoresizingMaskIntoConstraints="NO" id="H0J-Wp-ytj">
+                    <rect key="frame" x="20" y="78" width="354" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="qnf-89-hz7"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgH-md-ogL">
+                    <rect key="frame" x="20" y="243" width="354" height="124"/>
+                    <string key="text">Activation codes only apply to a very small percentage of our membership. These alpha-numeric codes would have been emailed to you upon enrollment, if applicable.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find my activation code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="XFo-LV-WPz">
+                    <rect key="frame" x="20" y="214" width="354" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="HSa-gh-bfd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XFo-LV-WPz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="33F-u4-EqF"/>
+                <constraint firstItem="KgH-md-ogL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="BN7-cS-k6q"/>
+                <constraint firstItem="XFo-LV-WPz" firstAttribute="top" secondItem="H0J-Wp-ytj" secondAttribute="bottom" constant="8" id="Irb-GG-0hF"/>
+                <constraint firstAttribute="trailing" secondItem="XFo-LV-WPz" secondAttribute="trailing" constant="20" id="J0Z-cc-i6F"/>
+                <constraint firstAttribute="trailing" secondItem="O5O-so-rHs" secondAttribute="trailing" constant="20" id="PbU-6c-djA"/>
+                <constraint firstItem="H0J-Wp-ytj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="TDR-cs-fIb"/>
+                <constraint firstItem="O5O-so-rHs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="UdN-C7-gW3"/>
+                <constraint firstAttribute="bottom" secondItem="KgH-md-ogL" secondAttribute="bottom" constant="6" id="Xdp-nJ-8Jh"/>
+                <constraint firstItem="O5O-so-rHs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="cHn-8N-92B"/>
+                <constraint firstItem="KgH-md-ogL" firstAttribute="top" secondItem="XFo-LV-WPz" secondAttribute="bottom" id="gZ7-9J-f5k"/>
+                <constraint firstAttribute="trailing" secondItem="H0J-Wp-ytj" secondAttribute="trailing" constant="20" id="i1d-t7-6GW"/>
+                <constraint firstItem="H0J-Wp-ytj" firstAttribute="top" secondItem="O5O-so-rHs" secondAttribute="bottom" constant="4" id="l3B-rM-VbG"/>
+                <constraint firstAttribute="trailing" secondItem="KgH-md-ogL" secondAttribute="trailing" constant="20" id="osL-nq-W7K"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-295.6521739130435" y="-257.47767857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Sshot" width="277.33334350585938" height="194"/>
+    </resources>
+</document>
